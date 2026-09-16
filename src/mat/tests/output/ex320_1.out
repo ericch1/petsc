@@ -1,0 +1,12 @@
+before, assembled:                           2. 4. 4. 4.
+before, assembled:                           4. 4. 2.
+after, local (Neumann):                      2. 1. 4. 1.
+after, local (Neumann):                      1. 4. 4. 2.
+after, assembled (MAT_INITIAL_MATRIX):       2. 1. 4. 2.
+after, assembled (MAT_INITIAL_MATRIX):       4. 4. 2.
+after, assembled (MAT_REUSE_MATRIX):         2. 1. 4. 2.
+after, assembled (MAT_REUSE_MATRIX):         4. 4. 2.
+MAT_REUSE_MATRIX vs MAT_INITIAL_MATRIX:      matches
+after, diagonal block:                       2. 1. 4. 2.
+after, diagonal block:                       4. 4. 2.
+MatGetDiagonalBlock() vs MAT_INITIAL_MATRIX: matches
