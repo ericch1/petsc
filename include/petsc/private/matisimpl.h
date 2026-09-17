@@ -23,6 +23,7 @@ typedef struct {
   PetscScalar *bdiag; /* Used by MatInvertBlockDiagonal_IS */
 
   PetscObjectState lnnzstate; /* nonzero state of local matrix */
+  MatState         lstate;    /* state of the local matrix the assembled forms were built from */
 
   PetscBool keepassembled; /* store assembled form if needed */
   Mat       assembledA;    /* assembled operator */
